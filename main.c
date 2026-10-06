@@ -175,7 +175,7 @@ bool parseNumber(const char *text, double *value)
     return false;
 }
 
-//Perform a vector operation.
+// Perform a vector operation.
 bool calculate(const char *left,
                char op,
                const char *right,
@@ -314,7 +314,7 @@ void userInterface(void)
             continue;
         }
 
-        //Copy input
+        // Copy input
         char clean[INPUT_SIZE];
 
         strcpy(clean, input);
@@ -343,7 +343,7 @@ void userInterface(void)
         double y;
         double z;
 
-        //VECTOR CREATION
+        // VECTOR CREATION
         if (sscanf(clean,
                    " %19s = %lf %lf %lf %c",
                    name,
@@ -376,7 +376,7 @@ void userInterface(void)
             continue;
         }
 
-        //Operation and Assignment
+        // Operation and Assignment
 
         if (sscanf(clean,
                    " %19s = %19s %c %19s %c",
@@ -418,7 +418,7 @@ void userInterface(void)
             continue;
         }
 
-        //Operation without assignment
+        // Operation without assignment
         if (sscanf(clean,
                    " %19s %c %19s %c",
                    left,
@@ -447,7 +447,7 @@ void userInterface(void)
             continue;
         }
 
-        //DISPLAY SINGLE VECTOR
+        // DISPLAY SINGLE VECTOR
         if (sscanf(clean,
                    " %19s %c",
                    name,
@@ -497,6 +497,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    printf("Type help for a list of commands.\n");
     // Start calculator.
     userInterface();
 
