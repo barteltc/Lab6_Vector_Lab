@@ -1,0 +1,8 @@
+//Dependency files
+*.d
+
+//Object files
+*.o
+
+//executable files
+veclab
