@@ -15,6 +15,7 @@ typedef struct
     char name[MAX_NAME];
     double data[3];
 } vect;
+int load(const char *filename);
 
 vect add(vect a, vect b);
 vect subtract(vect a, vect b);

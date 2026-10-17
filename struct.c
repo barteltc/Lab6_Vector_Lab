@@ -10,6 +10,9 @@
 
 #include "struct.h"
 
+/**
+ * Add two vectors.
+ */
 vect add(vect a, vect b)
 {
     vect returnval = {0};
@@ -22,6 +25,9 @@ vect add(vect a, vect b)
     return returnval;
 }
 
+/**
+ * Subtract two vectors.
+ */
 vect subtract(vect a, vect b)
 {
     vect returnval = {0};
@@ -34,6 +40,9 @@ vect subtract(vect a, vect b)
     return returnval;
 }
 
+/**
+ * Cross product of two vectors.
+ */
 vect crossProduct(vect a, vect b)
 {
     vect returnval = {0};
@@ -53,6 +62,9 @@ vect crossProduct(vect a, vect b)
     return returnval;
 }
 
+/**
+ * Dot product of two vectors.
+ */
 double dotProduct(vect a, vect b)
 {
     double returnval;
@@ -65,6 +77,9 @@ double dotProduct(vect a, vect b)
     return returnval;
 }
 
+/**
+ * Multiply a vector by a scalar.
+ */
 vect scalar(vect a, double b)
 {
     vect returnvalue = {0};

@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
 
-TARGET = minimat
+TARGET = main
 
 OBJS = main.o struct.o
 
